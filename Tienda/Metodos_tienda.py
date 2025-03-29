@@ -16,9 +16,9 @@ class Metodos_tienda():
                 while start2:
                     computador_obj = Computador.Computador()
                     print("Ingrese la cantidad de objetos")
-                    computador_obj.set_cantidad(input())
+                    computador_obj.set_cantidad(int(input()))
                     print("Ingrese el precio por unidad")
-                    computador_obj.set_precio(input())
+                    computador_obj.set_precio(float(input()))
                     print("Ingrese el tamaño de su ram")
                     computador_obj.set_tamano_ram(input())
                     print("Ingrese la marca del computador")
@@ -53,7 +53,11 @@ class Metodos_tienda():
                     print("Ingrese la referencia")
                     table_obj.set_referencia(input())
                     print("Ingrese la cantidad de ejemplares disponibles")
-                    table_obj.set_cantidad(int(input()))                    
-                pass
+                    table_obj.set_cantidad(int(input()))            
+                    pila_tablet.append(table_obj)
+                    print("Desea ingresar otro dato? Seleccione c si es para una computador, selecciones c para continar o [exit] para terminar")
+                    opt2 = input()
+                    if opt2.lower() == "c":
+                        start_pila = False
             else:
                 print("Ingrese una opción válida ")
