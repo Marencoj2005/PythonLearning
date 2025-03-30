@@ -3,7 +3,7 @@ class Computador():
     tamano_ram = None
     disponibilidad = None
     marca = None
-    nombre_usuario = None
+    nombre_computador = None
     cantidad = None
     referencia = None
     
@@ -34,10 +34,10 @@ class Computador():
     def set_marca(self, marca):
         self.marca = marca
 
-    def get_nombre_usuario(self):
-        return self.nombre_usuario
-    def set_nombre_usuario(self, nombre_usuario):
-        self.nombre_usuario = nombre_usuario
+    def get_nombre_computador(self):
+        return self.nombre_computador
+    def set_nombre_computador(self, nombre_computador):
+        self.nombre_computador = nombre_computador
 
     def get_cantidad(self):
         return self.cantidad

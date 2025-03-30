@@ -6,7 +6,9 @@ class Main():
     
     def main(self):
         metodos_tienda_obj = Metodos_tienda.Metodos_tienda()
-        metodos_tienda_obj.llenar_inventario()
+        inventario = metodos_tienda_obj.llenar_inventario()
+        #inventario = metodos_tienda_obj.mostrar(inventario)
+        metodos_tienda_obj.buscar(inventario)
 
 if __name__ == "__main__":
     Main().main()
