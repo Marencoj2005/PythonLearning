@@ -3,3 +3,4 @@
 Creacion del archivo Readme para documentar mis cambios en el aprendizaje de python en 6:45 am
 
 cambios desde la web
+Cambios de las 7:15 local
